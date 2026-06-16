@@ -1,60 +1,453 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>John Mwangi Murage | Portfolio</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1{
-            color: #0073aa;
-        }
-        .btn{
-            display: inline-block;
-            background: #0073aa;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Mwangi Murage | Web Developer & SEO Specialist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0f172a;
+    color:#fff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    padding:25px 0;
+    position:sticky;
+    top:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:800;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:1.15rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:60px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.skill-box h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.job{
+    background:#1e293b;
+    margin-bottom:25px;
+    padding:30px;
+    border-radius:15px;
+}
+
+.job h3{
+    color:#38bdf8;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.project{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project h3{
+    margin-bottom:10px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#38bdf8;
+    font-size:2.5rem;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:40px 0;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:1fr 1fr;
+}
+
+nav ul{
+    display:none;
+}
+}
+</style>
 </head>
 <body>
 
-<h1>John Mwangi Murage</h1>
-<p>Web Developer | WordPress Specialist | SEO Expert</p>
+<header>
+<div class="container">
+<nav>
+<div class="logo">John<span>.</span></div>
 
-<h2>About Me</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+
+<h1>Building Fast, SEO-Driven & Business-Focused <span>Web Solutions</span></h1>
+
 <p>
-Creative and people-oriented computer scientist with experience in WordPress development,
-SEO, web design, graphic design, and website support.
+I'm John Mwangi Murage, a Web Developer and SEO Specialist with extensive experience building WordPress websites, optimizing search visibility, and creating digital solutions that help organizations and businesses achieve measurable growth.
 </p>
 
-<h2>Skills</h2>
-<ul>
-    <li>WordPress Development</li>
-    <li>HTML, CSS, JavaScript</li>
-    <li>PHP</li>
-    <li>SEO</li>
-    <li>Google Analytics</li>
-    <li>Graphic Design</li>
-</ul>
+<a href="#contact" class="btn">Let's Work Together</a>
 
-<h2>Projects</h2>
-<ul>
-    <li>TechieBytes.co.ke</li>
-    <li>School Websites</li>
-    <li>Business Websites</li>
-    <li>SEO Optimization Projects</li>
-</ul>
+</div>
+</div>
+</section>
 
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<section id="about" class="section">
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<div class="card">
+<h3>Who I Am</h3>
+<p>
+A creative and business-oriented technology professional with experience in WordPress development, technical support, SEO, web design, analytics, and digital marketing.
+</p>
+<br>
+<p>
+I enjoy building websites that are fast, scalable, user-friendly, and optimized for search engines.
+</p>
+</div>
+
+<div class="card">
+<h3>My Focus</h3>
+<p>
+✔ WordPress Development<br>
+✔ SEO & Website Audits<br>
+✔ Website Performance Optimization<br>
+✔ Technical Support<br>
+✔ Responsive Web Design<br>
+✔ Analytics & Reporting<br>
+✔ Business Technology Solutions
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="skills" class="section">
+<div class="container">
+
+<h2 class="section-title">Core Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<h3>WordPress</h3>
+<p>Custom websites, theme customization, plugins, multisite management and troubleshooting.</p>
+</div>
+
+<div class="skill-box">
+<h3>SEO</h3>
+<p>Technical SEO, keyword research, on-page optimization and content strategy.</p>
+</div>
+
+<div class="skill-box">
+<h3>Web Development</h3>
+<p>HTML, CSS, JavaScript, PHP, Laravel and responsive design.</p>
+</div>
+
+<div class="skill-box">
+<h3>Analytics</h3>
+<p>Google Analytics, Search Console and performance reporting.</p>
+</div>
+
+<div class="skill-box">
+<h3>Graphic Design</h3>
+<p>Marketing materials, social graphics and branding assets.</p>
+</div>
+
+<div class="skill-box">
+<h3>Technical Support</h3>
+<p>Website maintenance, troubleshooting and customer support.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Highlights</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>5+</h2>
+<p>Years WordPress Experience</p>
+</div>
+
+<div class="stat">
+<h2>100+</h2>
+<p>Website Updates Delivered</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>SEO Projects</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Problem Solving Mindset</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="experience" class="section">
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="job">
+<h3>Web Developer & SEO Specialist</h3>
+<h4>Tech Vannah Limited</h4>
+<p>
+Developing and maintaining websites, implementing SEO strategies, optimizing performance and supporting digital growth initiatives.
+</p>
+</div>
+
+<div class="job">
+<h3>Freelance Web Developer</h3>
+<p>
+Worked with NGOs, schools, businesses and startups delivering modern websites and digital solutions.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="projects" class="section">
+<div class="container">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<div class="project-content">
+<h3>TechieBytes</h3>
+<p>Technology-focused platform providing useful digital resources and guides.</p>
+</div>
+</div>
+
+<div class="project">
+<div class="project-content">
+<h3>NGO Websites</h3>
+<p>Developed and maintained nonprofit websites focused on communication and impact.</p>
+</div>
+</div>
+
+<div class="project">
+<div class="project-content">
+<h3>Business Websites</h3>
+<p>Corporate websites designed to improve online visibility and lead generation.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="container">
+
+<div class="contact">
+
+<h2 class="section-title">Let's Connect</h2>
+
+<p>
+Interested in working together or discussing a project?
+</p>
+
+<br>
+
+<a href="mailto:john.murageh@gmail.com" class="btn">Contact Me</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 John Mwangi Murage. All Rights Reserved.
+</footer>
 
 </body>
 </html>

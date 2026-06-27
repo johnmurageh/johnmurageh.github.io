@@ -130,7 +130,7 @@ body::after {
     color: #ffffff;
 }
 .glass-card h3 {
-    color: var(--text-color);
+    color: #fff;
 }
 .glass-card:hover {
     transform: translateY(-5px);

@@ -121,7 +121,7 @@ body::after {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
     overflow: hidden;
-    color: var(--text-color);
+    color: #fff;
 }
 .glass-card p {
     color: var(--text-muted);

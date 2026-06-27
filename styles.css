@@ -121,6 +121,16 @@ body::after {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
     overflow: hidden;
+    color: var(--text-color);
+}
+.glass-card p {
+    color: var(--text-muted);
+}
+.glass-card strong {
+    color: #ffffff;
+}
+.glass-card h3 {
+    color: var(--text-color);
 }
 .glass-card:hover {
     transform: translateY(-5px);
